@@ -19,19 +19,5 @@ const dataSchema = new mongoose.Schema({
     }
 })
 
-const adminSchema = new mongoose.Schema({
-    username: {
-        required: true,
-        type: String
-    },
-    password: {
-        required: true,
-        type: Number
-    }
-})
-
 // Creating model objects
-module.exports = mongoose.model('Data', dataSchema);
-//const Admin = mongoose.model('Admin', adminSchema);
-
-//module.exports = {Data, Admin}
+module.exports = mongoose.model('Data', dataSchema)
