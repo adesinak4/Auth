@@ -31,7 +31,7 @@ const adminSchema = new mongoose.Schema({
 })
 
 // Creating model objects
-const Data = mongoose.model('Data', dataSchema);
-const Admin = mongoose.model('Admin', adminSchema);
+module.exports = mongoose.model('Data', dataSchema);
+//const Admin = mongoose.model('Admin', adminSchema);
 
-module.exports = {Data, Admin}
+//module.exports = {Data, Admin}
